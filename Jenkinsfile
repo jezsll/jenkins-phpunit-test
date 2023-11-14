@@ -1,6 +1,7 @@
 pipeline {
 	agent {
 		docker {
+			dockerHost = 'unix:///var/run/docker.sock'
 			image 'composer:latest'
 		}
 	}
